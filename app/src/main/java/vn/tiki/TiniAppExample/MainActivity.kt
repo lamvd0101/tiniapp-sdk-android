@@ -24,7 +24,7 @@ class MainActivity : Activity(), DefaultHardwareBackBtnHandler {
             .setBundleAssetName("tiniapp-runtime.jsbundle")
             .setJSMainModulePath("index")
             .addPackages(packages)
-            .setUseDeveloperSupport(false)
+            .setUseDeveloperSupport(BuildConfig.DEBUG)
             .setInitialLifecycleState(LifecycleState.RESUMED)
             .build()
 

@@ -34,6 +34,8 @@ dependencies {
     api "com.squareup.okhttp3:okhttp-urlconnection:3.12.1"
     api "com.squareup.okio:okio:1.15.0"
 
+//    api fileTree(dir: "libs", include: ["*.aar"])
+
     api(group: 'tiniapp-sdk', name: 'TiniAppSDK-release', ext: 'aar')
     api(group: 'tiniapp-sdk', name: 'adrianso_react-native-device-brightness-release', ext: 'aar')
     api(group: 'tiniapp-sdk', name: 'lamvd0101_react-native-video-editor-release', ext: 'aar')
