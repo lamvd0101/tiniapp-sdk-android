@@ -17,6 +17,10 @@ allprojects {
         google()
         mavenCentral()
 
+        flatDir {
+            dirs "$rootDir/library/libs"
+        }
+
         // Add this line
         maven { url "https://jitpack.io" }
     }
