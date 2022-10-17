@@ -2,5 +2,3 @@ jdk:
   - openjdk11
 before_install:
   - ./before_install.sh
-install:
-env:
