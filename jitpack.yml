@@ -14,3 +14,6 @@ install:
         -Dpackaging=aar \
         -DgeneratePom=true
     done
+
+    echo "Running a custom install command"
+    ./gradlew clean install -xtest
