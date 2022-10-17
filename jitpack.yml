@@ -2,77 +2,6 @@ jdk:
   - openjdk11
 install:
   - |
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.facebook.infer.annotation:infer-annotation:0.11.2
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=javax.inject:javax.inject:1
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=androidx.appcompat:appcompat:1.0.2
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.facebook.fresco:fresco:2.0.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.facebook.fresco:imagepipeline-okhttp3:2.0.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.facebook.soloader:soloader:0.6.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.code.findbugs:jsr305:3.0.2
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.squareup.okhttp3:okhttp:3.12.1
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.squareup.okhttp3:okhttp-urlconnection:3.12.1
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.squareup.okio:okio:1.15.0
-
-  - |
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.squareup.okio:okio:1.15.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=org.apache.commons:commons-lang3:3.8
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=net.time4j:time4j-android:4.8-2021a
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.zxing:core:3.3.3
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.facebook.conceal:conceal:1.1.3
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=androidx.swiperefreshlayout:swiperefreshlayout:1.1.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.github.yalantis:ucrop:2.2.6-native
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.github.CanHub:Android-Image-Cropper:3.2.2
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.maps.android:android-maps-utils:0.5
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.android.gms:play-services-base:17.0.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.android.gms:play-services-maps:17.0.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.google.android.gms:play-services-location:17.0.0
-
-    mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get \
-      -Dartifact=com.github.MatrixFrog:android-scalablevideoview:v1.0.4-jitpack
-
-  - |
     cd libs
     for lib in *; do
       libName=${lib//.aar/}
@@ -85,3 +14,6 @@ install:
         -Dpackaging=aar \
         -DgeneratePom=true
     done
+
+    cd ..
+    ./gradlew tasks --all
