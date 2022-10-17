@@ -34,6 +34,8 @@ dependencies {
     api "com.squareup.okhttp3:okhttp-urlconnection:3.12.1"
     api "com.squareup.okio:okio:1.15.0"
 
+    api "com.github.lamvd0101:tiniapp-sdk-android-libs:v1.1.0"
+
     // Libs
     implementation "com.github.henninghall:numberpickerview:v1.1.5"
     implementation "org.apache.commons:commons-lang3:3.8"

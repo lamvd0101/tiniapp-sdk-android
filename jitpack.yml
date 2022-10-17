@@ -1,19 +1,2 @@
 jdk:
   - openjdk11
-install:
-  - |
-    cd libs
-    for lib in *; do
-      libName=${lib//.aar/}
-      
-      mvn install:install-file \
-        -Dfile=$lib \
-        -DgroupId=vn.tiki.TiniApp \
-        -DartifactId=$libName \
-        -Dversion=$VERSION \
-        -Dpackaging=aar \
-        -DgeneratePom=true
-    done
-
-    cd ..
-    ./gradlew tasks --all
