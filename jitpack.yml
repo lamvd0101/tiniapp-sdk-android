@@ -7,7 +7,7 @@ install:
       libName=${lib//.aar/}
       
       mvn install:install-file \
-        -Dfile=libs/mylibrary-release.aar \
+        -Dfile=$lib \
         -DgroupId=vn.tiki \
         -DartifactId=$libName \
         -Dversion=1.0 \
