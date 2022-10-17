@@ -40,9 +40,9 @@ dependencies {
     api "com.squareup.okhttp3:okhttp-urlconnection:3.12.1"
     api "com.squareup.okio:okio:1.15.0"
 
-    // Aar files
-//    api fileTree(dir: "libs", include: ["*.aar"])
-    api "vn.tiki:TiniAppSDK:0.1.1"
+    fileTree("${rootDir}/libs").visit { FileVisitDetails details ->
+        api details.name.replace(".aar", "")
+    }
 
     // Libs
     implementation "com.github.henninghall:numberpickerview:v1.1.5"
