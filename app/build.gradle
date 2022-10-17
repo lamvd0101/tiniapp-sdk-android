@@ -33,5 +33,9 @@ dependencies {
     implementation project(":library")
 
     // Issue: Local .aar
-    // Solution: Merge .aar files | publish .aar file to cdn
+    // Merge .aar files: Not work
+    // flatDir: Not work
+    // artifacts.add("default", file('[nameOfTheAar].aar')): Not work
+    // Publish each .aar file to cdn
+    // Solve merge conflict
 }
