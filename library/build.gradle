@@ -35,7 +35,7 @@ dependencies {
     api "com.squareup.okio:okio:1.15.0"
 
     fileTree("${rootDir}/libs").visit { FileVisitDetails details ->
-        api "vn.tiki:${details.name.replace(".aar", "")}:1.0"
+        api "vn.tiki.TiniApp:${details.name.replace(".aar", "")}:1.0"
     }
 
     // Libs

@@ -8,13 +8,14 @@ install:
       
       mvn install:install-file \
         -Dfile=$lib \
-        -DgroupId=vn.tiki \
+        -DgroupId=vn.tiki.TiniApp \
         -DartifactId=$libName \
         -Dversion=1.0 \
         -Dpackaging=aar \
         -DgeneratePom=true
     done
 
-    cd ..
-    ./gradlew tasks --all
-
+    mvn install:install-file \
+      -Dfile=TiniAppSDK.pom \
+      -DpomFile=TiniAppSDK.pom \
+      -Dpackaging=pom
