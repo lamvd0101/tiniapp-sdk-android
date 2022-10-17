@@ -1,7 +1,0 @@
-include ':app'
-include ':library'
-
-// new File("./projects").traverse([maxDepth: 0, type: groovy.io.FileType.DIRECTORIES]) {
-//     include ":${it.name}"
-//     project(":${it.name}").projectDir = new File("${rootDir}/projects/${it.name}")
-// }
