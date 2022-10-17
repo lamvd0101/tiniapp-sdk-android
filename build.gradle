@@ -5,7 +5,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
     }
     dependencies {
         classpath('com.android.tools.build:gradle:4.2.1')
@@ -17,7 +16,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
 
         flatDir {
             dirs "$rootDir/library/libs"
