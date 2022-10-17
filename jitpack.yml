@@ -81,7 +81,7 @@ install:
         -Dfile=$lib \
         -DgroupId=vn.tiki.TiniApp \
         -DartifactId=$libName \
-        -Dversion=1.0 \
+        -Dversion=$VERSION \
         -Dpackaging=aar \
         -DgeneratePom=true
     done
