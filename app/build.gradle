@@ -29,13 +29,5 @@ android {
 
 dependencies {
     // Add this line
-    // implementation 'com.github.lamvd0101:tiniapp-sdk-android:v1.3.0'
     implementation project(":library")
-
-    // Issue: Local .aar
-    // Merge .aar files: Not work
-    // flatDir: Not work
-    // artifacts.add("default", file('[nameOfTheAar].aar')): Not work
-    // Publish each .aar file to cdn
-    // Solve merge conflict
 }
