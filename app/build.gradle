@@ -32,6 +32,10 @@ dependencies {
     // implementation 'com.github.lamvd0101:tiniapp-sdk-android:v1.3.0'
     implementation project(":library")
 
-    // Issue: Local .aar
-    // Solution: Merge .aar files | publish .aar file to cdn
+    // ---
+    // Issue 1: Local .aar
+    // Solution for issue 1: Merge .aar files | publish .aar file to cdn
+
+    // Issue 2: External libs
+    // Solution for issue 2: Get all libs list -> Create gradle file include external libs
 }

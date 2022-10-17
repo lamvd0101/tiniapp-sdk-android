@@ -1,6 +1,9 @@
 include ':app'
 include ':library'
 
+include ":TiniAppSDK"
+project(":TiniAppSDK").projectDir = new File("${rootDir}/projects/sdk")
+
 // new File("./projects").traverse([maxDepth: 0, type: groovy.io.FileType.DIRECTORIES]) {
 //     include ":${it.name}"
 //     project(":${it.name}").projectDir = new File("${rootDir}/projects/${it.name}")
