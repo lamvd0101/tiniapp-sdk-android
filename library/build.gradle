@@ -33,8 +33,7 @@ dependencies {
     api "com.squareup.okhttp3:okhttp:3.12.1"
     api "com.squareup.okhttp3:okhttp-urlconnection:3.12.1"
     api "com.squareup.okio:okio:1.15.0"
-//    api fileTree(dir: "libs", include: ["*.aar"])
-    api project(":TiniAppSDK")
+    api fileTree(dir: "libs", include: ["*.aar"])
 
     // Libs
     implementation "com.github.henninghall:numberpickerview:v1.1.5"
