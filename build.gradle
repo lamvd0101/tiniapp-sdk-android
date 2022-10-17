@@ -17,6 +17,10 @@ allprojects {
         google()
         mavenCentral()
 
+        maven {
+            url("$rootDir/localLibs")
+        }
+
         flatDir {
             dirs "$rootDir/library/libs"
         }

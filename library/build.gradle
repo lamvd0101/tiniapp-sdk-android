@@ -35,7 +35,8 @@ dependencies {
     api "com.squareup.okio:okio:1.15.0"
 
     // Aar files
-    api fileTree(dir: "libs", include: ["*.aar"])
+//    api fileTree(dir: "libs", include: ["*.aar"])
+    api "vn.tiki:TiniAppSDK:0.1.1"
 
     // Libs
     implementation "com.github.henninghall:numberpickerview:v1.1.5"
