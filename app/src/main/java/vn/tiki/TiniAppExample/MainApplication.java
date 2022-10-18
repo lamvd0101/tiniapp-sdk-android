@@ -1,7 +1,7 @@
 package vn.tiki.TiniAppExample;
 
-import android.app.Application;
+import vn.tiki.TiniAppSDK.TiniAppApplication;
 
-public class MainApplication extends Application {
+public class MainApplication extends TiniAppApplication {
 
 }
