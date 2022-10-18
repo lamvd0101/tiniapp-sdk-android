@@ -45,5 +45,5 @@ dependencies {
 
     api "com.github.MatrixFrog:android-scalablevideoview:v1.0.4-jitpack"
     api "com.facebook.conceal:conceal:1.1.3@aar"
-    api "com.github.lamvd0101:tiniapp-sdk-android-libs:v1.1.0"
+    api "com.github.lamvd0101:tiniapp-sdk-android-libs:v1.2.0"
 }
